@@ -82,23 +82,31 @@ export const projects = [
       "Dockerized deployment",
     ],
   },
-  {
-    id: 3,
-    title: "CNN Image Classifier",
-    description:
-      "Convolutional Neural Network for handwritten digit classification with real-time prediction interface. Complete pipeline from preprocessing to inference built on TensorFlow.",
-    tags: ["TensorFlow", "CNN", "Streamlit", "Deep Learning"],
-    github: null,
-    demo: null,
-    featured: true,
-    color: "#ff2d78",
-    highlights: [
-      "Custom CNN architecture",
-      "Real-time inference UI",
-      "Complete preprocessing pipeline",
-      "TensorFlow deployment",
-    ],
-  },
+  
+    {
+  id: 3,
+  title: "Transformer Translation Model",
+  description:
+    "Transformer-based English-to-Hindi Neural Machine Translation system built completely from scratch using PyTorch. Implemented the full encoder-decoder architecture including multi-head attention, positional encoding, autoregressive decoding, tokenizer integration, and FastAPI inference pipeline.",
+  tags: [
+    "PyTorch",
+    "Transformers",
+    "NLP",
+    "FastAPI",
+    "Deep Learning",
+  ],
+  github: "https://github.com/Vaibhavv526/Transformer-Translation-Model",
+  demo: null,
+  featured: true,
+  color: "#ff2d78",
+  highlights: [
+    "Custom Transformer architecture from scratch",
+    "English-to-Hindi neural translation pipeline",
+    "FastAPI inference backend",
+    "Autoregressive decoding with tokenizers",
+  ],
+},
+    
 ];
 
 export const skills = {
