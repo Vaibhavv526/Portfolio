@@ -46,7 +46,7 @@ export default function Projects() {
 
               {/* Header visual */}
               <div
-                className="h-36 relative overflow-hidden flex items-center justify-center"
+                className="h-48 relative overflow-hidden flex items-center justify-center"
                 style={{ background: `radial-gradient(ellipse at center, ${project.color}08 0%, transparent 70%)` }}
               >
                 {/* Decorative grid */}
@@ -58,15 +58,21 @@ export default function Projects() {
                   }}
                 />
 
-                {/* Project number */}
-                <div className="relative z-10 text-center">
-                  <span
-                    className="font-display font-bold text-6xl opacity-10"
-                    style={{ color: project.color }}
-                  >
-                    {String(project.id).padStart(2, "0")}
-                  </span>
-                </div>
+                {/* Project Image */}
+{/* Project Image */}
+<div className="relative z-10 w-full h-full flex items-center justify-center p-4">
+  <img
+    src={
+      project.id === 1
+        ? "/projects/weather.png"
+        : project.id === 2
+        ? "/projects/customer.png"
+        : "/projects/transformer.png"
+    }
+    alt={project.title}
+    className="relative z-10 w-full h-full object-cover rounded-xl border border-white/10"
+  />
+</div>
 
                 {/* Glow orb */}
                 <motion.div
